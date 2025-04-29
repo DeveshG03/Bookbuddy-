@@ -16,7 +16,7 @@ function SellBook() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    await axios.post('http://localhost:5000/books', formData);
+    await axios.post('https://bookbuddy-cnim.onrender.com', formData);
     alert('Book uploaded successfully!');
   }
 
