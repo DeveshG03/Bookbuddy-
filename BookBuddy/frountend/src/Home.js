@@ -6,7 +6,7 @@ function Home() {
 
   useEffect(() => {
     async function fetchBooks() {
-      const res = await axios.get('http://localhost:5000/books');
+      const res = await axios.get('https://bookbuddy-cnim.onrender.com');
       setBooks(res.data);
     }
     fetchBooks();
